@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+p{
+font-size: 14px;
+font-family: 'Raleway', sans-serif;
+}
+hr{
+  color: #ffffff;
+  background-color:#545454;
+}
+body,html{
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 250;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+ }
+/*  Top bar STYLE */
+.topbar{
+  width: 100%;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 9999;
+  
+}
+.topbar .left-topbar-text{
+ float: left;
+}
+.topbar .right-topbar-text{
+  float: right;
+ }/* 
+ header{
+  position: fixed;
+  top: 0;
+  left:0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #24252A;
+  padding: 10px 100px;
+  z-index: 9999;
+}
+header .logo{
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+
+
+}
+header ul{
+  position: relative;
+  display: flex;
+  float: right;
+}
+header ul li{
+  position: relative;
+  list-style: none;
+}
+header ul li a{
+  position: relative;
+  margin: 5px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+header.sticky{
+  transition: 0.5s;
+  padding: 5px 100px;
+}*/
+ Style logo 
+.logo{
+  cursor: pointer;
+  color:rgb(9, 137, 169);
+  position: relative;
+ 
+ }
+ .logo,img{
+  width: 100px;
+  height: 100px;
+ }
+/* Style the navigation bar */
+header{
+  box-shadow: 5px 5px 5px #24252a33;
+  z-index: 9999;
+  
+}
+.navbar{
+  width: 100%;
+  background-color: #24252A;
+  overflow: hidden;
+  float: left;
+  padding: 0 5%;
+  list-style: none;
+  
+}
+/* Navbar links */
+.navbar a{
+  float: left;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block ;
+  padding: 5px 16px;
+  border: none;
+  margin-top: 0px;
+  list-style: none;
+}
+.navbar-right{
+  float: right;
+  padding-bottom: 30px;
+}
+.navbar-right a:hover{
+  color: white;
+  color: rgb(4, 92, 207);
+
+  transition: all 0.3s ease 0s;
+}
+
+.head-btn{
+  margin-top: 0px;
+  position: relative;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  float: right;
+  left: 3%;
+ }
+ .head-btn:hover{
+  color: white;
+  background-color: rgb(4, 92, 207);
+  transition: all 0.3s ease 0s;
+ }
+/* Current/active navbar link 
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .header,.topbar {
+    float: none;
+    display: block;
+  }
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("heroimage.jpeg");
+  /* Set a specific height */
+  height: 500px;
+  
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 80px;
+  box-shadow: 5px 5px 5px #24252a33;
+
+}
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+.hero-text h3{
+  font-family: 'Raleway', sans-serif;
+}
+.home-banner-text{
+  text-align: center;
+  font-size: 25px;
+  margin: 50px;
+}
+.hero-text h1 {
+  font-size: 80px;
+}
+
+
+/*product section of page*/
+.home-product{
+  display: flex;
+  box-shadow: 5px 5px 5px #24252a33;
+
+}
+.btn-container{
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
+.product-btn{
+    justify-content: center;
+    color: white;
+    background-color: #eaa001;
+
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px 90px;
+    font-size: large;
+    transition: 0.3s;
+    transform-origin: left;
+}
+.product-btn:hover{
+  color: white;
+  background-color: rgb(4, 92, 207);
+}
+.column {
+  flex: 33.33%;
+  padding: 10px;
+  margin-left: 70px;
+
+}
+.home-product-content{
+  
+  text-align: center;
+  justify-content: center;
+
+}
+p{
+  font-family: 'Raleway', sans-serif;
+}
+.home-product-content h3{
+}
+/* The overlay effect - lays on top of the container and over the image 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through
+  color: #f1f1f1;
+  width: 15%;
+  transition: .9s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 80px;
+  
+}
+*/
+/* When you mouse over the container, fade in the overlay title 
+.home-product:hover .overlay {
+  opacity: 1;
+}*/
+
+/* Services Section*/
+.service-container{
+  padding: 30px;
+  background-color: rgba(187, 187, 187, 0.281);
+
+}
+.service-box{
+  text-align: center;
+  padding: 35px 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.service-box:hover{
+  background-color: rgb(4, 92, 207);
+
+}
+.service-box:before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: white white rgba(1,1,1,0.2) rgba(0,0,0,0.2);
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  transition: all 0.3s ease 0s;
+}
+.service-box:hover::before{
+  top: 0;
+  right: 0;
+}
+.service-box i{
+  display: block;
+  font-size: 65px;
+  color: rgb(4, 92, 207);
+
+  margin-bottom: 14px;
+  transition: all 0.3s ease 0s;
+}
+.service-box title{
+  font-size: 18px;
+  font-weight: 900;
+  color: #545454;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 0 16px 0;
+  transition: all 0.3s ease 0s;
+
+}
+.service-box .description{
+  font-size: 15px;
+  color: #545454;
+  line-height: 25px;
+  margin: 0;
+  transition: all 0.3s ease 0s;
+}
+.service-box:hover i,
+.service-box:hover .title,
+.service-box:hover .description{
+  color: white;
+}
+/* Clients section*/
+.section-container{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #24252A;
+  color: #ffffff;
+  margin-top: 10px;
+} 
+.clients-center{
+}
+/* Footer Section*/
+.footer{
+  padding: 20px;
+  color: #ffffff;
+  background-color: rgb(11, 16, 22);
+  font-family: 'Raleway', sans-serif;
+  position: sticky;
+  top: 100%;
+  
+}
+.footer-content{
+  display: inline-block;
+  align-items: center;
+  padding: 50px;
+  justify-content: center;
+  padding-left: 200px;
+}
+.footer-bottom{
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.footer-title{
+  color: #545454;
+  font-size: 25px;
+  font-weight: bold;
+}
+.box li a:hover {
+  color: #545454;
+}
+.box li,a{
+  color:#ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+
+.socials a{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+
+}
+.socials a i{
+  color: #ffffff;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+.socials a i:hover{
+color: rgb(4, 92, 207)
+}
+.contact-socials a{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  color: rgb(4, 92, 207);
+
+}
+
+.contact-socials a{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(4, 92, 207);
+}
+.contact-col-2-text,.contact-col-1-text,.contact-col-3-text {
+padding: 20px 0px;
+}
+
+#contact-row1{
+padding: 50px;
+}
+footer a{
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+/* About us page Section*/
+.about-banner{
+  background-color: rgb(4, 77, 173);
+
+
+  align-items: center;
+  text-align: center;
+  padding:20px;
+  color:white;
+  margin-top: 60px;
+  box-shadow: 5px 5px 5px #24252a33;
+  border-style: solid;
+  border-width: 1px;
+  border-right-style: none;
+  border-left-style: none;
+}
+.about{
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.about h1{
+ color: rgb(4, 92, 207);
+}
+.about h2::after{
+content: '';
+background: #24252A;
+display: block;
+height: 3px;
+width: 150px;
+margin: 10px auto;
+}
+.about p{
+font-size: 14px;
+font-family: 'Raleway', sans-serif;
+
+}
+.container-fluid{
+  padding: 50px;
+}
+
+.team{
+  text-align: center;
+  margin: 0;
+  box-shadow: 5px 5px 5px #24252a33;
+  padding-top: 50px;
+
+}
+.team h1{
+
+ color: rgb(4, 92, 207);
+ padding-bottom: 10px;
+}
+.team h1::after{
+content: '';
+background: #24252A;
+display: block;
+height: 3px;
+width: 150px;
+margin: 10px auto;
+}
+img.img-responsive {
+  height: 400px;
+  object-fit: cover;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.team-img-box{
+  opacity: 1;
+  display: block;
+  position: relative;
+  background-color: #24252A;
+  padding: 20px;
+}
+.team-img-box:hover{
+  opacity: 1;
+  display: block;
+  position: relative;
+  background-color: #eaa001;
+  padding: 20px;
+  transition: 0.50s;
+}
+.statement-box1,.statement-box2,.statement-box3 {
+  opacity: 1;
+  display: block;
+  position: relative;
+  padding: 10px;
+  text-align:justify;
+  width: 100%;
+  height: 100%;
+}
+.statement-box1{
+  background-color: rgb(248, 252, 47);
+  color: black;
+}
+.statement-box2{
+  background-color: rgb(4, 77, 173);
+  color: white;
+}
+.statement-box3{
+  background-color: rgb(238, 3, 74);
+  color: white;
+}
+.statement-section{
+text-align: center;
+background-color: whitesmoke;
+padding: 100px;
+margin: 0;
+}
+.statement{
+  text-align: center;
+}
+.statement-title{
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.statement p{
+font-size: 14px;
+font-family: 'Raleway', sans-serif;
+}
+
+.statement h1{
+ color: rgb(4, 92, 207);
+ padding: 10px;
+}
+.statement h1::after{
+content: '';
+background: #24252A;
+display: block;
+height: 3px;
+width: 150px;
+margin: 10px auto;
+}
+.home-slider-header{
+align-items: center;
+text-align: center;
+justify-content: center;
+padding: 30px;
+}
+#home-product-container{
+padding-bottom: 30px;
+}
+#client-row{
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* PRODUCT SLIDER IMG LARGE EFFECT*/
+
+.col-2 img:hover{
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+
+}
+/*Map section*/
+.map_location
+{
+  padding:5px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
